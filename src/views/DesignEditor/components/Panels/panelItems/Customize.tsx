@@ -51,7 +51,7 @@ export default function () {
           padding: "1.5rem",
         }}
       >
-        <Block>Customize</Block>
+        <Block style={{fontFamily: "Inter"}}>Tilpas</Block>
 
         <Block onClick={() => setIsSidebarOpen(false)} $style={{ cursor: "pointer", display: "flex" }}>
           <AngleDoubleLeft size={18} />
@@ -61,7 +61,7 @@ export default function () {
         <Block padding={"0 1.5rem"}>
           <Block>
             <ResizeTemplate />
-            <Block $style={{ fontSize: "14px", textAlign: "center", paddingTop: "0.35rem" }}>1080 x 1920px</Block>
+            <Block $style={{ fontSize: "14px", textAlign: "center", paddingTop: "0.35rem" }}> </Block>
           </Block>
 
           <Block paddingTop={"0.5rem"}>
@@ -74,7 +74,7 @@ export default function () {
                 fontSize: "14px",
               }}
             >
-              <div>Background color</div>
+              <div style={{fontFamily: "Inter"}}>Baggrundsfarve</div>
               <div
                 style={{
                   display: "grid",
@@ -224,7 +224,7 @@ function ResizeTemplate() {
           },
         }}
       >
-        Resize template
+        Lærredstørrelse
       </Button>
       <Modal
         onClose={() => setIsOpen(false)}
@@ -254,7 +254,7 @@ function ResizeTemplate() {
               fontWeight: 500,
             }}
           >
-            Choose a format and resize your template.
+            Vælg et format, og tilpas størrelsen på din skabelon.
           </Block>
           <Tabs
             overrides={{
@@ -278,7 +278,7 @@ function ResizeTemplate() {
               setActiveKey(activeKey)
             }}
           >
-            <Tab title="Preset size">
+            <Tab title="Preset Size">
               <Block $style={{ width: "100%", height: "400px" }}>
                 <Scrollbar>
                   <Block $style={{ display: "grid", gridTemplateColumns: "1fr 1fr 1fr" }}>
@@ -354,7 +354,7 @@ function ResizeTemplate() {
         </Block>
         <Block $style={{ display: "flex", alignItems: "center", justifyContent: "center", paddingBottom: "2rem" }}>
           <Button disabled={!isEnabled} onClick={applyResize} style={{ width: "190px" }}>
-            Resize template
+            Tilpas Størrelse
           </Button>
         </Block>
       </Modal>

@@ -240,14 +240,14 @@ export default function () {
             placement={PLACEMENT.bottom}
             showArrow={true}
             accessibilityType={"tooltip"}
-            content="Text color"
+            content="Tekst Farve"
           >
             <Button onClick={() => setActiveSubMenu("TextFill")} size={SIZE.mini} kind={KIND.tertiary}>
               <TextColor color={state.color} size={22} />
             </Button>
           </StatefulTooltip>
 
-          <StatefulTooltip placement={PLACEMENT.bottom} showArrow={true} accessibilityType={"tooltip"} content="Bold">
+          <StatefulTooltip placement={PLACEMENT.bottom} showArrow={true} accessibilityType={"tooltip"} content="Fed">
             <Button
               $style={{ ...(!state.bold && { color: "rgb(169,169,169)" }) }}
               disabled={!state.styleOptions.hasBold}
@@ -259,7 +259,7 @@ export default function () {
             </Button>
           </StatefulTooltip>
 
-          <StatefulTooltip placement={PLACEMENT.bottom} showArrow={true} accessibilityType={"tooltip"} content="Italic">
+          <StatefulTooltip placement={PLACEMENT.bottom} showArrow={true} accessibilityType={"tooltip"} content="Kursiv">
             <Button
               $style={{ ...(!state.italic && { color: "rgb(169,169,169)" }) }}
               disabled={!state.styleOptions.hasItalic}
@@ -275,7 +275,7 @@ export default function () {
             placement={PLACEMENT.bottom}
             showArrow={true}
             accessibilityType={"tooltip"}
-            content="Underline"
+            content="Understreg"
           >
             <Button
               $style={{ ...(!state.underline && { color: "rgb(169,169,169)" }) }}
@@ -297,13 +297,6 @@ export default function () {
 
           <TextSpacing />
           <Block width={"1px"} height={"24px"} backgroundColor="rgb(213,213,213)" margin={"0 4px"} />
-          <Button size={SIZE.compact} kind={KIND.tertiary}>
-            Effects
-          </Button>
-          <Block width={"1px"} height={"24px"} backgroundColor="rgb(213,213,213)" margin={"0 4px"} />
-          <Button size={SIZE.compact} kind={KIND.tertiary}>
-            Animate
-          </Button>
         </Block>
       </Block>
       <Common />
@@ -370,7 +363,7 @@ function TextFontSize() {
                 backgroundColor: "#ffffff",
                 paddingRight: 0,
                 fontWeight: 500,
-                fontFamily: "Uber Move Text",
+                fontFamily: "Inter",
                 fontSize: "14px",
               },
             },
@@ -413,7 +406,7 @@ function TextLetterCase() {
   const [state, setState] = React.useState<{ upper: boolean }>({ upper: false })
   const editor = useEditor()
   return (
-    <StatefulTooltip placement={PLACEMENT.bottom} showArrow={true} accessibilityType={"tooltip"} content="Letter case">
+    <StatefulTooltip placement={PLACEMENT.bottom} showArrow={true} accessibilityType={"tooltip"} content="Blokbogstaver">
       <Button
         onClick={() => {
           if (!state.upper) {
@@ -476,7 +469,7 @@ function TextSpacing() {
         <Block padding={"12px"} width={"200px"} backgroundColor={"#ffffff"} display={"grid"} gridGap={"8px"}>
           <Block>
             <Block $style={{ display: "flex", alignItems: "center", justifyContent: "space-between" }}>
-              <Block $style={{ fontSize: "14px" }}>Line height</Block>
+              <Block $style={{ fontSize: "14px" }}>Linje højde</Block>
               <Block width={"52px"}>
                 <Input
                   overrides={{
@@ -538,7 +531,7 @@ function TextSpacing() {
           </Block>
           <Block>
             <Block $style={{ display: "flex", alignItems: "center", justifyContent: "space-between" }}>
-              <Block $style={{ fontSize: "14px" }}>Char spacing</Block>
+              <Block $style={{ fontSize: "14px" }}>Tegn afstand</Block>
               <Block width={"52px"}>
                 <Input
                   overrides={{
@@ -601,7 +594,7 @@ function TextSpacing() {
       )}
     >
       <Block>
-        <StatefulTooltip placement={PLACEMENT.bottom} showArrow={true} accessibilityType={"tooltip"} content="Spacing">
+        <StatefulTooltip placement={PLACEMENT.bottom} showArrow={true} accessibilityType={"tooltip"} content="Afstand">
           <Button size={SIZE.mini} kind={KIND.tertiary}>
             <Spacing size={24} />
           </Button>
@@ -690,7 +683,7 @@ function TextAlign() {
       autoFocus
     >
       <Block>
-        <StatefulTooltip placement={PLACEMENT.bottom} showArrow={true} accessibilityType={"tooltip"} content="Align">
+        <StatefulTooltip placement={PLACEMENT.bottom} showArrow={true} accessibilityType={"tooltip"} content="Justér">
           <Button size={SIZE.mini} kind={KIND.tertiary}>
             <TextAlignCenter size={24} />
           </Button>

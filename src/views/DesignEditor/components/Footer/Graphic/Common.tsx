@@ -38,20 +38,17 @@ export default function () {
   return (
     <Block
       $style={{
-        height: "50px",
+        height: "70px",
         background: "#ffffff",
         display: "flex",
-        justifyContent: "space-between",
+        justifyContent: "center",
         alignItems: "center",
       }}
     >
-      <div>
-        <Button kind={KIND.tertiary} size={SIZE.compact}>
-          <Icons.Layers size={20} />
-        </Button>
-      </div>
       <div style={{ display: "flex", alignItems: "center", justifyContent: "center" }}>
-        <Button kind={KIND.tertiary} size={SIZE.compact}>
+        <Button kind={KIND.tertiary} size={SIZE.compact}
+        onClick={() => editor.zoom.zoomToRatio(.25)}>
+          
           <Icons.Expand size={16} />
         </Button>
         <Button kind={KIND.tertiary} size={SIZE.compact}
@@ -60,7 +57,7 @@ export default function () {
         </Button>
         <Button kind={KIND.tertiary} size={SIZE.compact}
           onClick={() => editor.zoom.zoomOut()}>
-          <Icons.RemoveCircleOutline size={24} />
+          <Icons.RemoveCircleOutline size={20} />
         </Button>
         <Slider
           overrides={{
@@ -68,12 +65,12 @@ export default function () {
             ThumbValue: () => null,
             TickBar: () => null,
             Root: {
-              style: { width: "140px" },
+              style: { width: "150px" },
             },
             Thumb: {
               style: {
-                height: "12px",
-                width: "12px",
+                height: "16px",
+                width: "16px",
                 paddingLeft: 0,
               },
             },
@@ -91,7 +88,7 @@ export default function () {
         />
         <Button kind={KIND.tertiary} size={SIZE.compact}
           onClick={() => editor.zoom.zoomIn()}>
-          <Icons.AddCircleOutline size={24} />
+          <Icons.AddCircleOutline size={20} />
         </Button>
         <Input
           type="number"
@@ -111,18 +108,6 @@ export default function () {
         />
       </div>
       <div style={{ display: "flex", alignItems: "center", justifyContent: "end" }}>
-        <Button kind={KIND.tertiary} size={SIZE.compact}>
-          <Icons.Refresh size={16} />
-        </Button>
-        <Button kind={KIND.tertiary} size={SIZE.compact}>
-          <Icons.Undo size={22} />
-        </Button>
-        <Button kind={KIND.tertiary} size={SIZE.compact}>
-          <Icons.Redo size={22} />
-        </Button>
-        <Button kind={KIND.tertiary} size={SIZE.compact}>
-          <Icons.TimePast size={16} />
-        </Button>
       </div>
     </Block>
   )

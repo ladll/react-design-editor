@@ -7,7 +7,7 @@ export const defaultTextOptions: TextOptions = {
   textAlign: "left",
   charSpacing: 0,
   fill: "#000000",
-  fontFamily: "Open Sans",
+  fontFamily: "Inter",
   fontSize: 12,
   lineHeight: 12,
   isGroup: false,

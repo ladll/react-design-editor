@@ -33,7 +33,7 @@ export default function () {
       content={() => (
         <Block width={"200px"} backgroundColor={"#ffffff"} padding={"20px"}>
           <Block $style={{ display: "flex", alignItems: "center", justifyContent: "space-between" }}>
-            <Block $style={{ fontSize: "14px" }}>Opacity</Block>
+            <Block $style={{ fontSize: "14px" }}>Opacitet</Block>
             <Block width={"52px"}>
               <Input
                 overrides={{

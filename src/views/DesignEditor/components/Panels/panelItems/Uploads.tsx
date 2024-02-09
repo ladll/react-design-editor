@@ -51,7 +51,7 @@ export default function () {
             padding: "1.5rem",
           }}
         >
-          <Block>Uploads</Block>
+          <Block style={{fontFamily: "Inter"}}>Upload</Block>
 
           <Block onClick={() => setIsSidebarOpen(false)} $style={{ cursor: "pointer", display: "flex" }}>
             <AngleDoubleLeft size={18} />

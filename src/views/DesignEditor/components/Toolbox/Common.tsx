@@ -60,7 +60,7 @@ export default function () {
           size={SIZE.compact}
           kind={KIND.tertiary}
         >
-          Ungroup
+          Fjern gruppering
         </Button>
       ) : state.isMultiple ? (
         <Button
@@ -71,7 +71,7 @@ export default function () {
           size={SIZE.compact}
           kind={KIND.tertiary}
         >
-          Group
+          Gruppér
         </Button>
       ) : null}
 
@@ -80,12 +80,12 @@ export default function () {
       <CommonAlign />
       <Opacity />
       <LockUnlock />
-      <StatefulTooltip placement={PLACEMENT.bottom} showArrow={true} accessibilityType={"tooltip"} content="Duplicate">
+      <StatefulTooltip placement={PLACEMENT.bottom} showArrow={true} accessibilityType={"tooltip"} content="Dupliker">
         <Button onClick={() => editor.objects.clone()} size={SIZE.mini} kind={KIND.tertiary}>
           <DuplicateIcon size={22} />
         </Button>
       </StatefulTooltip>
-      <StatefulTooltip placement={PLACEMENT.bottom} showArrow={true} accessibilityType={"tooltip"} content="Delete">
+      <StatefulTooltip placement={PLACEMENT.bottom} showArrow={true} accessibilityType={"tooltip"} content="Slet">
         <Button onClick={() => editor.objects.remove()} size={SIZE.mini} kind={KIND.tertiary}>
           <DeleteIcon size={24} />
         </Button>
@@ -117,7 +117,7 @@ function CommonLayers() {
               kind={KIND.tertiary}
               size={SIZE.mini}
             >
-              Bring to front
+              Send til front
             </Button>
             <Button
               startEnhancer={<SendToBack size={24} />}
@@ -125,7 +125,7 @@ function CommonLayers() {
               kind={KIND.tertiary}
               size={SIZE.mini}
             >
-              Send to back
+              Send til bagerst
             </Button>
           </Block>
 
@@ -159,7 +159,7 @@ function CommonLayers() {
                 setChecked(!checked)
               }}
             />
-            <Block>Clip to frame</Block>
+            <Block>Klip til ramme</Block>
           </Block>
         </Block>
       )}
@@ -167,7 +167,7 @@ function CommonLayers() {
       autoFocus
     >
       <Block>
-        <StatefulTooltip placement={PLACEMENT.bottom} showArrow={true} accessibilityType={"tooltip"} content="Layers">
+        <StatefulTooltip placement={PLACEMENT.bottom} showArrow={true} accessibilityType={"tooltip"} content="Lag">
           <Button size={SIZE.mini} kind={KIND.tertiary}>
             <LayersIcon size={19} />
           </Button>
@@ -214,7 +214,7 @@ function CommonAlign() {
       autoFocus
     >
       <Block>
-        <StatefulTooltip placement={PLACEMENT.bottom} showArrow={true} accessibilityType={"tooltip"} content="Align">
+        <StatefulTooltip placement={PLACEMENT.bottom} showArrow={true} accessibilityType={"tooltip"} content="Justér">
           <Button size={SIZE.mini} kind={KIND.tertiary}>
             <AlignCenter size={24} />
           </Button>
@@ -239,7 +239,7 @@ function LockUnlock() {
   return (
     <>
       {state.locked ? (
-        <StatefulTooltip placement={PLACEMENT.bottom} showArrow={true} accessibilityType={"tooltip"} content="Lock">
+        <StatefulTooltip placement={PLACEMENT.bottom} showArrow={true} accessibilityType={"tooltip"} content="Lås op">
           <Button
             onClick={() => {
               editor.objects.unlock()
@@ -252,7 +252,7 @@ function LockUnlock() {
           </Button>
         </StatefulTooltip>
       ) : (
-        <StatefulTooltip placement={PLACEMENT.bottom} showArrow={true} accessibilityType={"tooltip"} content="Lock">
+        <StatefulTooltip placement={PLACEMENT.bottom} showArrow={true} accessibilityType={"tooltip"} content="Lås">
           <Button
             onClick={() => {
               editor.objects.lock()

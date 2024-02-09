@@ -1,7 +1,6 @@
 import { Block } from "baseui/block"
 import Common from "./Common"
-import Flip from "./Shared/Flip"
-import Replace from "./Shared/Replace"
+import Flip from "./Shared/FlipReplace"
 
 export default function () {
   return (

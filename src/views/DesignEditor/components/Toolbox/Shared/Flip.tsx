@@ -44,7 +44,7 @@ export default function () {
               kind={KIND.tertiary}
               size={SIZE.mini}
             >
-              Flip horizontally
+              Flip Vandret
             </Button>
           </Block>
           <Button
@@ -54,7 +54,7 @@ export default function () {
             kind={KIND.tertiary}
             size={SIZE.mini}
           >
-            Flip vertically
+            Flip Lodret
           </Button>
         </Block>
       )}

@@ -11,7 +11,7 @@ interface State {
 }
 
 export default function () {
-  const [state, setState] = React.useState<State>({ name: "My first design.", width: 0 })
+  const [state, setState] = React.useState<State>({ name: "Unavngiven Skabelon", width: 0 })
   const { currentDesign, setCurrentDesign } = useDesignEditorContext()
   const inputTitleRef = React.useRef<Input>(null)
   const spanRef = React.useRef<HTMLDivElement | null>(null)
@@ -38,7 +38,7 @@ export default function () {
       $style={{
         display: "flex",
         alignItems: "center",
-        justifyContent: "center",
+        justifyContent: "Center",
         color: "#ffffff",
         opacity: 1,
       }}
@@ -46,7 +46,7 @@ export default function () {
       <Block $style={{ display: "flex", position: "absolute", top: "-10px", left: "50%", width: "100%" }}>
         <Block
           $style={{
-            fontFamily: "Uber Move Text",
+            fontFamily: "Inter",
             position: "absolute",
             top: "-10px",
             left: "50%",
@@ -82,7 +82,7 @@ export default function () {
                 fontWeight: 500,
                 fontSize: "14px",
                 width: `${state.width}px`,
-                fontFamily: "Uber Move Text",
+                fontFamily: "Inter",
                 backgroundColor: "transparent",
                 color: "#ffffff",
                 paddingRight: 0,
@@ -103,7 +103,7 @@ export default function () {
             },
           },
         }}
-        content={() => <Block backgroundColor={"#ffffff"}>{"All changes are saved"}</Block>}
+        content={() => <Block backgroundColor={"#ffffff"}>{"SkrivX Designer Version 5.4"}</Block>}
       >
         <Block
           $style={{

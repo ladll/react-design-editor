@@ -55,7 +55,7 @@ export default function () {
           id: nanoid(),
           frame: defaultTemplate.frame,
           metadata: {},
-          name: "Untitled Design",
+          name: "Unavngiven skabelon",
           preview: "",
           scenes: [],
           type: "GRAPHIC",
@@ -125,77 +125,5 @@ export default function () {
     [editor, scenes, currentScene]
   )
 
-  return (
-    <Block
-      $style={{
-        padding: "0.25rem 0.75rem",
-        background: "#ffffff",
-      }}
-    >
-      <Block $style={{ display: "flex", alignItems: "center" }}>
-        {scenes.map((page, index) => (
-          <div
-            style={{
-              background: page.id === currentScene?.id ? "rgb(243,244,246)" : "#ffffff",
-              padding: "1rem 0.5rem",
-            }}
-            key={index}
-          >
-            <div
-              onClick={() => changePage(page)}
-              className={css({
-                cursor: "pointer",
-                position: "relative",
-                border: page.id === currentScene?.id ? "2px solid #7158e2" : "2px solid rgba(0,0,0,.15)",
-              })}
-            >
-              <img
-                style={{ maxWidth: "90px", maxHeight: "80px", display: "flex" }}
-                src={currentPreview && page.id === currentScene?.id ? currentPreview : page.preview}
-              />
-              <div
-                className={css({
-                  position: "absolute",
-                  bottom: "4px",
-                  right: "4px",
-                  background: "rgba(0,0,0,0.4)",
-                  color: "#fff",
-                  fontSize: "10px",
-                  borderRadius: "2px",
-                  height: "16px",
-                  width: "16px",
-                  display: "flex",
-                  alignItems: "center",
-                  justifyContent: "center",
-                })}
-              >
-                {index + 1}
-              </div>
-            </div>
-          </div>
-        ))}
-        <div
-          style={{
-            background: "#ffffff",
-            padding: "1rem 1rem 1rem 0.5rem",
-          }}
-        >
-          <div
-            onClick={addScene}
-            className={css({
-              width: "100px",
-              height: "56px",
-              background: "rgb(243,244,246)",
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-              cursor: "pointer",
-            })}
-          >
-            <Add size={20} />
-          </div>
-        </div>
-      </Block>
-    </Block>
-  )
+  
 }

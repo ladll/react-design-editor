@@ -10,7 +10,7 @@ export default function () {
       {displayPlayback && <Playback />}
       <Canvas
         config={{
-          background: "#f1f2f6",
+          background: "#F4F8FB",
           controlsPosition: {
             rotation: "BOTTOM",
           },

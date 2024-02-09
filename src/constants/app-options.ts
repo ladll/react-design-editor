@@ -24,15 +24,6 @@ export const BASE_ITEMS = [
     name: "Text",
   },
   {
-    id: "graphics",
-    name: "Graphics",
-  },
-
-  {
-    id: "pixabay",
-    name: "Pixabay",
-  },
-  {
     id: "layers",
     name: "Layers",
   },

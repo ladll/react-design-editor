@@ -26,7 +26,7 @@ export default function () {
         id: nanoid(),
         type: "StaticText",
         width: 420,
-        text: "Add some text",
+        text: "Skriv din tekst",
         fontSize: 92,
         fontFamily: font.name,
         textAlign: "center",
@@ -75,7 +75,7 @@ export default function () {
           padding: "1.5rem",
         }}
       >
-        <Block>Text</Block>
+        <Block style={{fontFamily: "Inter"}}>Tekst</Block>
 
         <Block onClick={() => setIsSidebarOpen(false)} $style={{ cursor: "pointer", display: "flex" }}>
           <AngleDoubleLeft size={18} />
@@ -94,7 +94,7 @@ export default function () {
               },
             }}
           >
-            Add text
+            Tilføj Tekst
           </Button>
 
           <Block

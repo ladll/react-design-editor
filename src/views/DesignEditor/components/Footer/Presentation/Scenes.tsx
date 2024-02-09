@@ -60,7 +60,7 @@ export default function () {
           id: nanoid(),
           frame: defaultTemplate.frame,
           metadata: {},
-          name: "Untitled Design",
+          name: "Unavngiven skabelon",
           preview: "",
           scenes: [],
           type: "PRESENTATION",

@@ -13,6 +13,9 @@ import { loadTemplateFonts } from "~/utils/fonts"
 import { loadVideoEditorAssets } from "~/utils/video"
 import DesignTitle from "./DesignTitle"
 import { IDesign } from "~/interfaces/DesignEditor"
+import { Upload } from "baseui/icon"
+import { StatefulTooltip } from "baseui/tooltip"
+import Download from "~/components/Icons/Download"
 
 const Container = styled<"div", {}, Theme>("div", ({ $theme }) => ({
   height: "64px",
@@ -262,10 +265,10 @@ export default function () {
     <ThemeProvider theme={DarkTheme}>
       <Container>
         <div style={{ color: "#ffffff" }}>
-          <Logo size={36} />
+          SkrivX Designer
         </div>
         <DesignTitle />
-        <Block $style={{ display: "flex", alignItems: "center", gap: "0.5rem", justifyContent: "flex-end" }}>
+        <Block $style={{ display: "flex", alignItems: "center", gap: "1rem", justifyContent: "flex-end" }}>
           <input
             multiple={false}
             onChange={handleFileInput}
@@ -286,7 +289,7 @@ export default function () {
               },
             }}
           >
-            Import
+            Importer skabelon
           </Button>
 
           <Button
@@ -301,8 +304,9 @@ export default function () {
               },
             }}
           >
-            Export
+            Eksporter skabelon
           </Button>
+          
           <Button
             size="compact"
             onClick={() => setDisplayPreview(true)}
@@ -310,12 +314,12 @@ export default function () {
             overrides={{
               StartEnhancer: {
                 style: {
-                  marginRight: "4px",
+                  marginRight: "16px",
                 },
               },
             }}
           >
-            <Play size={24} />
+            <Download size={24}/> Download
           </Button>
         </Block>
       </Container>

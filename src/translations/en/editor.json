@@ -1,16 +1,18 @@
 {
     "panels": {
         "panelsList": {
-            "templates": "Templates",
-            "customize": "Customize",
-            "elements": "Elements",
-            "images": "Images",
-            "videos": "Videos",
+            "templates": "Skabeloner",
+            "customize": "Tilpas",
+            "elements": "Elementer",
+            "images": "Branding",
+            "videos": "Videoer",
             "uploads": "Uploads",
-            "text": "Text",
-            "graphics": "Graphics",
+            "text": "Tekst",
+            "graphics": "Grafikker",
             "pixabay": "Pixabay",
-            "layers": "Layers"
+            "layers": "Lag"
         }
     }
+
+    
 }

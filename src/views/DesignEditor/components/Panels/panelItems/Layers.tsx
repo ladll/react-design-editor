@@ -51,7 +51,7 @@ export default function () {
           padding: "1.5rem",
         }}
       >
-        <Block>Layers</Block>
+        <Block style={{fontFamily: "Inter"}}>Lag</Block>
 
         <Block onClick={() => setIsSidebarOpen(false)} $style={{ cursor: "pointer", display: "flex" }}>
           <AngleDoubleLeft size={18} />

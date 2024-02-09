@@ -18,7 +18,7 @@ export default function () {
         justifyContent: "flex-end",
       }}
     >
-      <StatefulTooltip placement={PLACEMENT.bottom} showArrow={true} accessibilityType={"tooltip"} content="Unlock">
+      <StatefulTooltip placement={PLACEMENT.bottom} showArrow={true} accessibilityType={"tooltip"} content="Lås op">
         <Button
           onClick={() => {
             editor.objects.unlock()
