@@ -2876,7 +2876,7 @@ export const SAMPLE_TEMPLATES = [
     }
   ],
   "metadata": {},
-  "preview": "https://ik.imagekit.io/hi82aunhn/TemplateThumbnails/template5_ig.png"
+  "preview": "https://ik.imagekit.io/hi82aunhn/TemplateThumbnails/template5_igx.png"
 },
 {
   "id": "pcVA4x8j8PnFfHUz6LRRE",
@@ -3168,7 +3168,7 @@ export const SAMPLE_TEMPLATES = [
     }
   ],
   "metadata": {},
-  "preview": "https://ik.imagekit.io/hi82aunhn/TemplateThumbnails/template5_fb.png"
+  "preview": "https://ik.imagekit.io/hi82aunhn/TemplateThumbnails/template5_fbx.png"
 },
 {
   "id": "Wf5HU3lfsG-EY6FKrnzGp",
