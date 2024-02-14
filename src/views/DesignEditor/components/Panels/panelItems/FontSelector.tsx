@@ -64,7 +64,7 @@ export default function () {
       >
         <Block $style={{ display: "flex", alignItems: "center", gap: "0.5rem" }}>
           <ArrowBackOutline size={24} />
-          <Block>Choose font</Block>
+          <Block>Vælg skrifttype</Block>
         </Block>
         <Block onClick={() => setIsSidebarOpen(false)} $style={{ cursor: "pointer", display: "flex" }}>
           <AngleDoubleLeft size={18} />
@@ -82,7 +82,7 @@ export default function () {
           }}
           clearable
           onChange={(e) => setQuery((e.target as any).value)}
-          placeholder="Search font"
+          placeholder="Søg efter skrifttype"
           size={SIZE.compact}
           startEnhancer={<Search size={16} />}
         />

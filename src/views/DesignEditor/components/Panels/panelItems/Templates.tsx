@@ -18,27 +18,28 @@ export default function () {
 
   const loadTemplate = React.useCallback(
     async (template: any) => {
-      if (editor) {
-        const fonts: any[] = []
+      console.log("Template loaded:", template);
+      if (template && template.layers) { // Tilføjet denne kontrol
+        const fonts: any[] = [];
         template.layers.forEach((object: any) => {
           if (object.type === "StaticText" || object.type === "DynamicText") {
             fonts.push({
               name: object.fontFamily,
               url: object.fontURL,
               options: { style: "normal", weight: 400 },
-            })
+            });
           }
-        })
-        const filteredFonts = fonts.filter((f) => !!f.url)
+        });
+        const filteredFonts = fonts.filter((f) => !!f.url);
         if (filteredFonts.length > 0) {
-          await loadFonts(filteredFonts)
+          await loadFonts(filteredFonts);
         }
-
-        setCurrentScene({ ...template, id: currentScene?.id })
+  
+        setCurrentScene({ ...template, id: currentScene?.id });
       }
     },
     [editor, currentScene]
-  )
+  );
 
   return (
     <Block $style={{ flex: 1, display: "flex", flexDirection: "column" }}>

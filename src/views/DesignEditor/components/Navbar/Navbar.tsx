@@ -18,7 +18,7 @@ import { StatefulTooltip } from "baseui/tooltip"
 import Download from "~/components/Icons/Download"
 
 const Container = styled<"div", {}, Theme>("div", ({ $theme }) => ({
-  height: "64px",
+  height: "0px",
   background: $theme.colors.black,
   display: "grid",
   padding: "0 1.25rem",

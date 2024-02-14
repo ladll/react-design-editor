@@ -61,7 +61,7 @@ function ImageItem({ preview, onClick }: { preview: any; onClick?: (option: any)
       onClick={onClick}
       className={css({
         position: "relative",
-        background: "#f8f8fb",
+        background: "#e6e6e6",
         cursor: "pointer",
         borderRadius: "8px",
         overflow: "hidden",

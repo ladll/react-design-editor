@@ -278,7 +278,7 @@ function ResizeTemplate() {
               setActiveKey(activeKey)
             }}
           >
-            <Tab title="Preset Size">
+            <Tab title="Størrelsesformat">
               <Block $style={{ width: "100%", height: "400px" }}>
                 <Scrollbar>
                   <Block $style={{ display: "grid", gridTemplateColumns: "1fr 1fr 1fr" }}>
@@ -317,7 +317,7 @@ function ResizeTemplate() {
                 </Scrollbar>
               </Block>
             </Tab>
-            <Tab title="Custom size">
+            <Tab title="Brugerdefineret format">
               <Block $style={{ padding: "2rem 2rem" }}>
                 <Block
                   $style={{ display: "grid", gridTemplateColumns: "1fr 50px 1fr", alignItems: "end", fontSize: "14px" }}

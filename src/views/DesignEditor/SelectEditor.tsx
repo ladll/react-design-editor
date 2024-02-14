@@ -14,8 +14,8 @@ export default function () {
   return (
     <Block
       $style={{
-        height: "100vh",
-        width: "100vw",
+        height: "0vh",
+        width: "0vw",
         background: "#ffffff",
         display: "flex",
         alignItems: "center",

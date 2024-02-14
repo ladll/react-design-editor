@@ -66,12 +66,12 @@ function PanelListItem({ label, icon, activePanel, name }: any) {
         gap: "0.1rem",
         ":hover": {
           cursor: "pointer",
-          backgroundColor: theme.colors.white,
+          backgroundColor: "theme.colors.white",
           transition: "all 1s",
         },
       }}
     >
-      <Icon size={24} />
+      <Icon size={24}/>
       <div>{label}</div>
     </Block>
   )
