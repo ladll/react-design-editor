@@ -1018,7 +1018,34 @@ export const images = [
     },
     liked: false,
     alt: "Blaavandmaegleren & Onlinemaegleren Logo",
+  },
+  {
+    id: 12569708,
+    width: 952,
+    height: 742,
+    url: "https://ik.imagekit.io/hi82aunhn/Branding/OnlineMgleren.png",
+    photographer: "Onlinemægleren",
+    photographer_url: "www.blaavandmaegleren.dk",
+    photographer_id: 12412301,
+    avg_color: "#6B7749",
+    src: {
+      original: "https://ik.imagekit.io/hi82aunhn/Branding/OnlineMgleren.png",
+      large2x:
+        "https://ik.imagekit.io/hi82aunhn/Branding/OnlineMgleren.png?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      large:
+        "https://ik.imagekit.io/hi82aunhn/Branding/OnlineMgleren.png?auto=compress&cs=tinysrgb&h=650&w=940",
+      medium: "https://ik.imagekit.io/hi82aunhn/Branding/OnlineMgleren.png?auto=compress&cs=tinysrgb&h=350",
+      small: "https://ik.imagekit.io/hi82aunhn/Branding/OnlineMgleren.png?auto=compress&cs=tinysrgb&h=130",
+      portrait:
+        "https://ik.imagekit.io/hi82aunhn/Branding/OnlineMgleren.png?auto=compress&cs=tinysrgb&fit=crop&h=1200&w=800",
+      landscape:
+        "https://ik.imagekit.io/hi82aunhn/Branding/OnlineMgleren.png?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200",
+      tiny: "https://ik.imagekit.io/hi82aunhn/Branding/OnlineMgleren.png?auto=compress&cs=tinysrgb&dpr=1&fit=crop&h=200&w=280",
+    },
+    liked: false,
+    alt: "Onlinemaegleren Logo",
   }
+
 ]
 
 export const pixabayImages = [
